@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.bod{
+			background-color: rgba(1, 1, 1, 1.0);
+		}
+		.box{
+			width: 350px;
+			height: 450px;
+			border: 1px solid;
+			border-radius: 10px;
+			background-color: rgba(1, 1, 1, 1.0);
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 2pc;
+			box-shadow: 0 0 15px rgba(238, 21, 50, 0.4);
+			animation: rec 5s linear infinite;
+		}	
+		@keyframes rec {
+			0%{
+				box-shadow:0 0 20px red;
+			}
+			25%{
+				box-shadow:0 0 20px yellow;
+			}
+			50%{
+				box-shadow:0 0 20px green;
+			}
+			75%{
+				box-shadow:0 0 20px purple;
+			}
+			100%{
+				box-shadow:0 0 20px red;
+			}
+		}
+		.ip{
+			width: 15pc;
+			height: 1.8pc;
+			position: relative;
+			left: 2.8pc;
+			top: 10pc;
+			border-radius: 7px;
+			margin: 0.5pc;
+			background-color: black;
+			color: violet;
+		}
+		.bo{
+			width: 7pc;
+			height: 1.5pc;
+			margin-top: 10pc;
+			margin-left: 7.5pc;
+			background-color: greenyellow;
+			color: violet;
+			border-radius: 5px;
+		}
+		.text{
+			text-align: center;
+			flex-wrap: wrap;
+			color: white;
+			position: relative;
+			top: 5pc;
+			font-size: 20px;
+		}
+		.re{
+			width: 20px;
+			height: 20px;
+			position: relative;
+			left: 1pc;
+		}
+		.tt{
+			color: white;
+			position: relative;
+			top: -5px;
+			left: 1pc;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body id="ur" class="bod">
+	<input id="ra" class="re" type="checkbox" name="">
+	<p id="tex" class="tt">темный режим</p>
+	<div id="ww" class="box">
+		<p id="au" class="text">Сен кимсин:</p>
+		<input id="ir" class="in ip" type="text" name="">
+		<button disabled id="b" class="bo">бас!</button>
+	</div>
+	<script type="text/javascript">
+		const ir = document.getElementById('ir')
+		const b = document.getElementById('b')
+		const au = document.getElementById('au')
+		const ra = document.getElementById('ra')
+		const tex = document.getElementById('tex')
+		const ww = document.getElementById('ww')
+		 ir.oninput = () => {
+		  	console.dir(ir.value)
+		  	if (ir.value.length > 0) {
+		 		b.disabled=false
+		 	}else{
+		 		b.disabled=true
+		 	}
+		  }
+			b.onclick = () => {
+		  	au.innerText = 'Сен кимсин: ' + ir.value
+		  }
+		  ra.onchange = () => {
+		  	
+		  	if (ra.checked == true) {
+		  	ur.style.backgroundColor= 'white'
+		  	ww.style.backgroundColor= 'white'
+		  	au.style.color='black'
+		  	tex.style.color='black'
+		  	ir.style.backgroundColor = 'white'
+		  	tex.innerText='темный режим' 
+		  	console.dir(ra.checked)
+		  }else {
+		  	ur.style.backgroundColor = 'black'
+		  	ww.style.backgroundColor= 'black'
+		  	au.style.color='white'
+		  	tex.style.color='white'
+		  	ir.style.backgroundColor = 'black'
+		  	tex.innerText='светлый режим' 
+			}
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>клавиатура</title>
+	<style type="text/css">
+	</style>
+	<style type="text/css">
+		.box{
+			width: 700px;
+			height: 500px;
+			border: 2px solid;
+			position: relative;
+			overflow: hidden;
+		}
+		.pg{
+			width:50px;
+			height: 50px;
+			border: 1px solid;
+			position: absolute ;
+      transition: 0.1s;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div id="t" class="pg"></div>
+	</div>
+	<script type="text/javascript">
+   const w = document.getElementById('t')
+    s = 0
+    q = 0
+    f = null
+    document.body.onkeyup = (a) =>{
+       f = a.key
+       console.log(a)
+    }
+   		setInterval(() => {
+	   		if (f == 'ArrowRight') {
+	        s += 10
+	      }else if (f == 'ArrowLeft') {
+	        s -= 10
+	      }else if (f == 'ArrowDown') {
+	        q += 10
+	      }else if (f == 'ArrowUp') {
+	        q -= 10
+	      }
+	      if (q > 500) {
+	      	q = 0
+	      }else if (q < 0) {
+	      	q = 500
+	      }else if (s > 700) {
+	      	s = 0
+	      }else if (s < 0) {
+	      	s = 700
+	      }
+        w.style.left=`${s}px`
+        w.style.top=`${q}px`
+   		},100)
+    
+  
+    
+	</script>
+</body>
+</html>

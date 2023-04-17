@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.a{
+			width: 250px;
+			height: 500px;
+			border: 1px solid;
+			border-radius: 15px;
+			background-color: black;
+			display: inline-block;
+		}
+		.b{
+			width: 125px;
+			height: 125px;
+			border: 1px solid red;
+			border-radius: 50%;
+			background-color: green;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1.8pc;
+		}
+		.c{
+			width: 125px;
+			height: 125px;
+			border: 1px solid;
+			border-radius: 50%;
+			background-color: yellow;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1.8pc;
+			text-align: center;
+			font-size: 100px;
+			transition: 1s;
+			
+		}
+		.c:hover{
+			transform: scale(0.9);
+		}
+		.d{
+			width: 125px;
+			height: 125px;
+			border: 1px solid red;
+			border-radius: 50%;
+			background-color: red;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1.8pc;
+		}
+		.seri{
+			width: 100px;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<div class="a">
+		<div id="red" class="b"></div>
+		<div class="c">
+			15
+		</div>
+		<div id="ree" class="d"></div>
+	</div>
+	<div class="ar a">
+		<div id="reee" class="br b"></div>
+		<div class="cr c">15</div>
+		<div id="reeee" class="dr d"></div>
+	</div>
+	<button id="reb" class="seri"></button>
+	<script type="text/javascript">
+		const reb = document.getElementById('reb')
+		reb.onclick = () => {
+			red.style.backgroundColor = red.style.backgroundColor === 'black'?'red':'black'
+			ree.style.backgroundColor = ree.style.backgroundColor === 'green'?'black':'green'
+			reee.style.backgroundColor = reee.style.backgroundColor === 'green'?'black':'green'
+			reeee.style.backgroundColor = reeee.style.backgroundColor === 'black'?'red':'black'
+			console.dir(red.style.backgroundColor = red.style.backgroundColor)
+		}
+	</script>
+</body>
+</html>

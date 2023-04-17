@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			background-image: url(https://proprikol.ru/wp-content/uploads/2019/10/krasivye-kartinki-okeana-16.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.text{
+			font-size: 40px;
+			text-align: center;
+		}
+		.br{
+			width: 250px;
+			height: 30px;
+			border-radius: 10px;
+			box-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			border: 1px solid black;
+			transition: 1s;
+			background-color: rgba(236, 80, 8, 0.2);
+		}
+		.text_1{
+			position: relative;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		.bu_{
+			width: 100px;
+			height: 30px;
+			background-color: rgba(236, 80, 8, 0.2);
+			border-radius: 5px;
+			position: relative;
+			left: 62%;
+			top: 9.9pc;
+		}
+		.bo{
+			width: 50%;
+			height: auto;
+			border: 1px solid;
+			position: relative;
+			top: 1pc;
+			border-radius: 10px;
+			left: 50%;
+			transform: translate(-50%);
+			background-color: rgba(236, 80, 8, 0.2);
+		}
+		.er{
+			width: 120px;
+			height: 20px;
+			border: 1px solid;
+			position: relative;
+			left: 30%;
+			top: 1pc;
+			border-bottom: rgba(0, 0, 0, 0.0);
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			text-align: center;
+		}
+		  .box{
+		  	width: 300px;
+		  	height: 60px;
+   			font-size: 35px;
+ 			text-align: center;
+   			border-radius: 5px;
+   			position: absolute;
+   			left: -30pc;
+  			transition: 1s;
+  			transform: rotate(90deg);
+  		}
+  		.rb{
+  			border-radius: 10px;
+  			background-color: rgba(236, 80, 8, 0.2);
+  			position: relative;
+  			left: 50%;
+  			top: 1pc;
+  			transform: translate(-50%);
+  			width: 100px;
+  			height: 25px;
+  		}
+  		.k{
+  			width: 50px;
+  			height: 28px;
+  			position: relative;
+  			left: 47%;
+  			top: 12.9pc;
+  			border-radius: 5px;
+  			background-color: rgba(236, 80, 8, 0.2);
+  		}
+  		.n{
+  			position: absolute;
+  			font-size: 30px;
+  			left: 58%;
+  			top: 3.6pc;
+  		}
+  		.box_1{
+  			width: 300px;
+		  	height: 60px;
+   			font-size: 35px;
+ 			text-align: center;
+   			border-radius: 5px;
+   			position: absolute;
+   			left: -30pc;
+  			transition: 1s;
+  			transform: rotate(90deg);
+  		}
+	</style>
+</head>
+<body>
+	<button id="but" class="bu_">Отправить</button>
+	<button id="w" class="k">Click</button>
+	<p id="h" class="text">Числ слов <p id="nal" class="n">0</p>
+</p>
+	<input  id="put" class="br" type="text" name="">
+	<input placeholder="поиск"  id="tup" class="rb" type="text" name="">
+	<div class="er">Айгерим эже</div>
+	<div class="bo">
+		<ul id="u" class="text_1">
+		</ul>
+	</div>
+	<div id="box" class="box"></div>
+	<div id="box_1" class="box_1"></div>
+	<script type="text/javascript">
+	const u = document.getElementById('u')
+  	const but = document.getElementById('but')
+  	const tup = document.getElementById('tup')
+  	const put = document.getElementById('put')
+  	const box = document.getElementById('box')
+  	const nal = document.getElementById('nal')
+ 	function c(){
+   		box.style =' background-color: #381CC7;color: white; left: -8pc;'
+   		box.innerHTML='<b>ничего нетушки ?</b>'
+  	}
+  	function ww(){
+   		box_1.style =' background-color: #381CC7;color: white; left: -8pc;'
+   		box_1.innerHTML='<b>ничего нетушки ?</b>'
+  	}
+  	function s(){
+  		 put.style=`border: 1px solid;`
+  	}
+  	function x(){
+   		box.style = 'left: -300px'
+  	}
+  	but.onclick = () => {
+   	if(put.value !== ''){
+    	u.innerHTML += `<li>${put.value}</li>`
+    	put.value = ''
+    	nal.innerText++
+   }else{
+    	c()
+    	put.style=`border: 1px solid red;box-shadow: 0 0 5px red;`
+    	setTimeout(x, 3000)
+    	setTimeout(s, 3500)
+   }
+  }
+  tup.oninput = () => {
+  	function ee (){
+  		box_1.style=`left:-300px;`
+  	}
+  	function wq (){
+  		tup.style=`border: 1px solid;`
+  	}
+  		if(u.innerText == ''){
+  			ww()
+  	tup.style=`border: 1px solid red;box-shadow: 0 0 5px red; transition: 1s;`
+  	setTimeout(ee, 3000)
+  	setTimeout(wq, 3500)
+   
+  	}
+  }
+  console.dir(put.value)
+	</script>
+</body>
+</html>

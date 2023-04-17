@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.a{
+			width: 250px;
+			height: 555px;
+			border: 1px solid;
+			border-radius: 15px;
+			background-color: black;
+			display: inline-block;
+		}
+		.b{
+			width: 145px;
+			height: 145px;
+			border: 1px solid red;
+			border-radius: 50%;
+			background-color: red;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1.8pc;
+		}
+		.c{
+			width: 145px;
+			height: 145px;
+			border: 1px solid;
+			border-radius: 50%;
+			background-color: yellow;
+			border: 1px solid yellow;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1.8pc;
+		}
+		.d{
+			width: 145px;
+			height: 145px;
+			border: 1px solid red;
+			border-radius: 50%;
+			background-color: black;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1.8pc;
+		}
+		.tepp{
+			font-size:80px;
+			text-align: center;
+			position: relative;
+			top: -3.5pc;
+		}
+		.tepp:hover{
+			transform: scale(0.8);
+		}
+		.click{
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			position: relative;
+			left: 60%;
+			display: inline-block;
+			align-items: center;
+			transition: 0.1s;
+			background-image: url(https://st4.depositphotos.com/1842549/20791/i/950/depositphotos_207915944-stock-photo-red-shiny-icon-white-background.jpg);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		.click:active{
+			transform: scale(0.9);
+		}
+		.v{
+			background-color: black;
+		}
+		.t{
+			background-color: greenyellow;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<div class="a">
+		<div id="red" class="b"></div>
+			<div id="res" class="c">
+				<p id="tp" class="tepp">7</p>
+			</div>
+		<div id="ree" class="d"></div>
+	</div>
+	<div class="a">
+		<div id="aa" class="b v"></div>
+			<div id="bb" class="c">
+				<p id="cc" class="tepp">7</p>
+			</div>
+		<div id="dd" class="d t"></div>
+	</div>
+	<div id="clk" class="click"></div>
+	<script type="text/javascript">
+		const red = document.getElementById('red')
+		const res = document.getElementById('res')
+		const ree = document.getElementById('ree')
+		const tp = document.getElementById('tp')
+		const clk = document.getElementById('clk')
+		let secu = 7
+		let seci = 0
+		res.style=`transition: 1s;`
+		tp.style=`transition: 1s;`
+		red.style=`transition: 1s;`
+		ree.style=`transition: 1s;`
+		function a() {
+				red.style.backgroundColor = red.style.backgroundColor === 'black'?'red':'black'
+				ree.style.backgroundColor = ree.style.backgroundColor === 'greenyellow'?'black':'greenyellow'
+				aa.style.backgroundColor = red.style.backgroundColor === 'red'?'black':'red'
+				dd.style.backgroundColor = ree.style.backgroundColor === 'black'?'greenyellow':'black'
+				if () {}
+		}
+		function we () {
+			res.style.backgroundColor='yellow'
+			tp.style.color='black'
+			bb.style.backgroundColor='yellow'
+			cc.style.color='black'
+		}
+		ty = 7
+		function c() {
+			we()
+			ty--
+			tp.innerText = ty
+			cc.innerText = ty
+			if (ty == 0) {
+				ty = secu
+				tp.innerText = ty
+				cc.innerText = ty
+				a()
+			}else if (ty < 5) {
+			res.style.backgroundColor='black'
+			tp.style.color='yellow'
+			bb.style.backgroundColor='black'
+			cc.style.color='yellow'
+		}
+		setTimeout(we,500)
+	}
+		setInterval(c,1000)
+		function fc() {
+			 red.style.backgroundColor = 'red'
+			 ree.style.backgroundColor = 'black'
+			 aa.style.backgroundColor = 'red'
+			 dd.style.backgroundColor = 'black'
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.i{
+			width: 600px;
+			height: 500px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border: 1px solid;
+			border-radius: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			margin-top: 3pc;
+		}
+	</style>
+</head>
+<body>
+	<img id="im" class="i" src="">
+	<script type="text/javascript">
+		const im = document.getElementById('im')
+		let a = prompt('картинка URL(?)')
+		let b = a.substring(0,5) 
+		if (b !== 'https') {
+			im.src='https://i.imgur.com/fPcNIzu.jpg'
+		}else{
+			im.src=a
+		}
+	</script>
+</body>
+</html>

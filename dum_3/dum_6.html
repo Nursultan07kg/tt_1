@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style type="text/css">
+    .box{
+      height: 100px;
+      border: 1px solid;
+      background-color: black;
+      border-radius: 15px;
+    }
+    .bo{
+      width: 500px;
+      height: 30px;  
+      position: relative;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%);
+      border-radius: 5px;
+    }
+    .picture{
+      width: 98.6%;
+      height: 29pc;
+      border: 1px solid rgba(0, 0, 0, 0.0);
+      position: absolute;
+      top: 7.5pc;
+    }
+    .i{
+      position: relative;
+      width: 150px;
+      height: 30px;
+      left: 30pc;
+      top: 2pc;
+      transition: 1s;
+      border-radius: 5px;
+    }
+    .i:active{
+      transform:scale(1.0);
+      box-shadow: 0 0 15px greenyellow;
+    }
+    .io{
+      position: relative;
+      top: -1pc;
+      left: 0.5pc;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <input id="te" class="bo" type="number" name="">
+  <button id="ter" class="i">нажми</button>
+  </div>
+  <div class="picture">
+    <p id="teri"></p>
+  </div>
+  <script type="text/javascript">
+    const te = document.getElementById('te')
+    const ter = document.getElementById('ter')
+    const teri = document.getElementById('teri')
+    ter.onclick = () => {
+       let c = te.value
+       let dd = c.substring(1,4)
+      if (dd >= 550 && c <= 559) {
+        teri.innerHTML='<img class="io picture" src="https://avatars.mds.yandex.net/i?id=9ba84ba1a0d70cef3e7ea015d3db36b7-5232271-images-thumbs&n=13"/>'
+      }else if (dd >= 700 && c <= 709) {
+         teri.innerHTML='<img class="picture" src=""/>'
+      }else if (dd >= 220 && c <= 229) {
+        teri.innerHTML='<img class="picture" src=""/>'
+      }else{
+        teri.innerHTML='<img class="picture" src=""/>'
+      }
+    }
+  </script>
+</body>
+</html>

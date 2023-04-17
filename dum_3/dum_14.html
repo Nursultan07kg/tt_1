@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.bod{
+			background-image: url(https://images.squarespace-cdn.com/content/v1/5fe22b62c9e6bd53f3bf5f3e/1608746098271-FWBZN6LXJ9CHBDWAW0UH/shutterstock_778939489.jpg?format=2500w);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.box{
+			width: 500px;
+			height: 300px;
+			border: 1px solid;
+			border-radius: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10pc;
+			background-color: rgba(1, 140, 146, 0.2);
+			box-shadow: 0 0 15px blanchedalmond;
+		}
+		.box_1{
+			width: 120px;
+			height: 50px;
+			border: 1px solid;
+			border-radius: 10px;
+			margin-left: 8.5pc;
+			margin-top: 3pc;
+			background-color: rgba(1, 140, 146, 0.5);
+		}
+		.slc{
+			width: 100px;
+			height: 20px;
+			border: 1px solid;
+			border-radius: 5px;
+			position: relative;
+			left: 50%;
+			top: 1pc;
+			transform: translate(-50%);
+			background-color: rgba(1, 0, 146, 0.2);
+		}
+		.box_2{
+			width: 100px;
+			height: 30px;
+			border: 1px solid;
+			border-radius: 10px;
+			position: relative;
+			left: 17pc;
+			top: -2.5pc;
+			background-color: rgba(1, 140, 146, 0.5);
+		}
+		.chis{
+			width: 80px;
+			height: 20px;
+			border-radius: 5px;
+			position: relative;
+			left: 50%;
+			top: 0.3pc;
+			transform: translate(-50%);
+			background-color: rgba(1, 0, 146, 0.2);
+		}
+		marquee{
+			font-size: 50px;
+			display: inline-block;
+			margin-top: 1pc;
+		}
+	</style>
+</head>
+<body class="bod">
+	<div class="box">
+		<marquee>Дата смерть</marquee>
+		<div class="box_1">
+			<select id="selec" class="slc">
+				<option value="30">Январь</option>
+				<option value="28">Февраль</option>
+				<option value="30">Март</option>
+				<option value="31">Апрель</option>
+				<option value="30">Май</option>
+				<option value="31">Июнь</option>
+				<option value="30">Июль</option>
+				<option value="31">Август</option>
+				<option value="30">Сентябрь</option>
+				<option value="31">Октябрь</option>
+				<option value="30">Ноябрь</option>
+				<option value="31">Декабрь</option>
+			</select>
+		</div>
+		<div class="box_2">
+			<select id="sel" class="chis">
+				<option>1</option>
+			</select>
+		</div>
+		<input id="l" type="text" name="">
+	</div>
+	<script type="text/javascript">
+		const selec = document.getElementById('selec')
+		const sel = document.getElementById('sel')
+		selec.onchange = () => {
+		for ( i = 1;i <= selec.value ; i++) {
+			sel.innerHTML+=`<option>${i}</option>`
+		}
+	}
+
+
+	l.oninput=(a)=>{
+		console.log(a.target.value)
+	}
+	</script>
+</body>
+</html>

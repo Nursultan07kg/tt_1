@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+		}
+		.box{
+			position: relative;
+			left: 30%;
+			top: 10pc;
+			font-size: 150px;
+			transition: 1s;
+		}
+		.p{
+			top: -2pc;
+			left: 35pc;
+		}
+		.box_1{
+			top: -11.5pc;
+			left: 40pc;
+		}
+	</style>
+</head>
+<body id="bb">
+	<div id="1_s" class="box">00</div>
+	<div class="p box">:</div>
+	<div id="2_s" class="box_1 box">00</div>
+	<script type="text/javascript">
+		const b = document.getElementById('bb')
+		const st_1 = document.getElementById('1_s')
+		const st_2 = document.getElementById('2_s')
+
+			ty = 0
+			secu = 0
+			function c() {
+				ty++
+				st_2.innerText = ty
+				if (st_2.innerText == 60) {
+					ty = secu
+					secu++
+					st_1.innerText = secu
+				}
+			 } 
+			 let h=0 
+			 function r(){
+				h = setInterval(c,25)
+			}
+		document.body.onkeyup = (a) => {
+			if (a.key == 'w') {
+				r()
+				bb.style=`background-color:green;`
+				
+			} if (a.key == 'e') {
+				if (confirm('Выбирите чтоноибуть ААААА!!!№;№;%:;№') == true) {
+					bb.style=`background-color:green;`
+					ty='0'
+					g=h
+					clearInterval(h)
+					if(e.key=='w'){
+						r()
+					}
+				}else{
+					bb.style=`background-color:red;`
+					st_1.innerText = '00' 
+					st_2.innerText = '00' 
+					ty = 0
+					secu = 0
+					clearInterval(h)
+					
+				}
+			}
+		}
+	
+	</script>
+</body>
+</html>

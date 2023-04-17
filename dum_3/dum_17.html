@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614768532_20-p-koshki-na-chernom-fone-22.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			transition: 0.5s;
+		}
+		.ch{
+			width: 50px;
+			height: 50px;
+			transition: 1s;
+		}
+		.tt{
+			color: white;
+			position: relative;
+			top: -1pc;
+			left: 1pc;
+			display: inline-block;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body id="bb">
+	<input id="on" class="ch" type="checkbox" name="">
+	<p id="tex" class="tt">темный режим</p>
+	<script type="text/javascript">
+		const bb = document.getElementById('bb')
+		const on = document.getElementById('on')
+		const tex = document.getElementById('tex')
+		on.onchange = () => {
+		if (on.checked == true) {
+			bb.style=`background-image:url(https://chudo-prirody.com/uploads/posts/2021-08/1628725441_37-p-belii-kot-foto-41.jpg);`
+			tex.innerText='темный режим' 
+			tex.style.color='black'
+
+		}else{
+			bb.style=`background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614768532_20-p-koshki-na-chernom-fone-22.jpg);`
+			tex.innerText='светлый режим' 
+			tex.style.color='white'
+		}
+	}
+	</script>
+</body>
+</html>

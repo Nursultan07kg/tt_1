@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.b_1{
+			background-color: white;
+		}
+		.bu_1{
+			width: 200px;
+			height: 50px;
+			border-bottom-right-radius: 10px;
+			border-top-right-radius: 10px;
+			position: relative;
+			left: 50%;
+			top: 25pc;
+			background-color: rgba(41, 102, 244, 0.7);
+			transition: 0.1s;
+		}
+		.bu_1:active{
+			transform: scale(0.9);
+			box-shadow: 0 0 5px red;
+		}
+		.bu_2{
+			width: 200px;
+			height: 50px;
+			border-bottom-left-radius: 10px;
+			border-top-left-radius: 10px;
+			position: relative;
+			left: 18.2%;
+			top: 25pc;
+			background-color: rgba(41, 102, 244, 0.7);
+			transition: 0.1s;
+		}
+		.bu_2:active{
+			transform: scale(0.9);
+			box-shadow: 0 0 5px red;
+		}
+		.tex{
+			text-align: center;
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body id="b_1_" class="b_1">
+	<button id="bu_1_" class="bu_1">black ></button>
+	<button id="bu_2_" class="bu_2"> < AB/^%</button>
+	<p id="text" class="tex"></p>
+	<script type="text/javascript">
+		let a = prompt('~~~(A)~~~')
+		let ms = ['red','pink','blue','aqua']
+		let ma = ["'Rubik Iso', cursive","'Jura',sans-serif","'Martel', serif","'Smokum', cursive","'Spectral', serif"]
+		const bu_1_ = document.getElementById('bu_1_')
+	    const bu_2_ = document.getElementById('bu_2_')
+	    const b_1_ = document.getElementById('b_1_')
+	    let b = 0
+	    text.innerText=`${a}`	
+	    nall=0
+	    b_1_.style.backgroundColor=ms[nall] 
+	    bu_1_.innerText=`${ms[nall]}`
+	    bu_1_.onclick = () => {
+	    	nall=nall+1
+	    	if (nall == ms.length)
+	    		nall=0
+
+	    		b_1_.style.backgroundColor=`${ms[nall]}` 
+	    		
+	    		bu_1_.innerText=`${ms[nall]}`
+	    	}
+	    	text.style.fontFamily=`${ma[b]}`
+	    	bu_2_.innerText=`${ma[b]}`
+	    	nall=nall=0
+	    	
+	    	bu_2_.onclick = () => {
+	    		b=b+1
+	    		if (b >= ma.length) 
+	    	 	b=0
+	    		text.style.fontFamily=`${ma[b]}`
+	    		bu_2_.innerText=`${ma[b]}`
+	    		
+	   			
+	    	}
+	    
+	</script>
+</body>
+</html>

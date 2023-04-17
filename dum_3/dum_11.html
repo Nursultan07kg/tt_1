@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.bx{
+			width: 12pc;
+			height: 12pc;
+			border: 1px solid;
+			border-radius: 20px;
+			background-color: rgba(4, 15, 55, 1.0);
+			position: relative;
+			left: 80%;
+			top: 15pc;
+			box-shadow: 0 0 10px 5px yellowgreen;
+		}
+		.cc{
+			text-align: center;
+			margin-top:1pc;
+			font-size: 100px;
+			color: green;
+			text-shadow: 5px 2px 8px black;
+		}
+		.bod{
+			background-image: url(https://top-fon.com/uploads/posts/2023-01/1674659400_top-fon-com-p-fon-dlya-prezentatsii-zheleznaya-doroga-dl-118.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.bo_right{
+			width: 4.5pc;
+			height: 4.5pc;
+			border: 1px solid;
+			border-radius: 50%;
+			background-color: red;
+			position: relative;
+			top: -3pc;
+			box-shadow: 0 0 5px green;
+			transition: 0.1s;
+		}
+		.bo_right:active {
+			transform: scale(0.9);
+		}
+		.bo_left{
+			left: 7.4pc;
+			top: 3.5pc;
+			background-color: green;
+			box-shadow: 0 0 5px red;
+		}
+		.bo_top{
+			left: 3.5pc;
+			top: -20.2pc;
+			background-color: aqua;
+			box-shadow: 0 0 5px 1px blue;
+		}
+		.bo_bottom{
+			left: 3.7pc;
+			top: -6.3pc;
+			background-color: blue;
+			box-shadow: 0 0 5px aqua;
+		}
+		.pgt{
+			background-image: url(http://data.3dtuning.com/tun/Tx4zPi3OUT.png);
+			background-repeat: no-repeat;
+			width: pc;
+			height: 4pc;
+			background-size: cover;
+			position: relative;
+			top: 0px;
+			left: 0px;
+		}
+		.bo_left_1{
+			width: 2pc;
+			height: 2pc;
+			top: -4pc;
+			left: 0.5pc;
+			background-color: yellow;
+		}
+		.bo_left_2{
+			width: 2pc;
+			height: 2pc;
+			top: -2pc;
+			left: 0.5pc;
+			background-color: pink;
+		}
+		.bo_left_3{
+			width: 2pc;
+			height: 2pc;
+			top: -8.8pc;
+			left: 9.5pc;
+			background-color: violet;
+		}
+		.bo_left_4{
+			width: 2pc;
+			height: 2pc;
+			top: -24.3pc;
+			left: 9.5pc;
+			background-color: goldenrod;
+		}
+	</style>
+</head>
+<body class="bod">
+	<div id="shar" class="pgt"></div>
+	<div class="bx">
+		<div id="left" class="bo_left bo_right"></div>
+			<div id="let_1" class="bo_left_1 bo_right"></div>
+		<div id="right" class="bo_right"></div>
+			<div id="let_11" class="bo_left_2 bo_right"></div>
+		<div id="botto" class="bo_bottom bo_right"></div>
+				<div id="let_2" class="bo_left_3 bo_right"></div>
+		<div id="to" class="bo_top bo_right"></div>
+			<div id="let_3" class="bo_left_4 bo_right"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		const left = document.getElementById('left')
+		const right = document.getElementById('right')
+		const shar = document.getElementById('shar')
+		const to = document.getElementById('to')
+		const botto = document.getElementById('botto')
+		const let_1 = document.getElementById('let_1')
+		const let_11 = document.getElementById('let_11')
+		const let_2 = document.getElementById('let_2')
+		const let_3 = document.getElementById('let_3')
+		shar.style=`transition: 1s linear ;`
+		px = 0
+		pi = 0
+		 left.onclick = () => {
+		 	px += 30
+		 	shar.style.left=px+'px'
+		 }
+		  right.onclick = () => {
+		 	px -= 30
+		 	shar.style.left=px+'px'
+		 }
+		  to.onclick = () => {
+		 	pi -= 30
+		 	shar.style.top=pi+'px'
+		 }
+		  botto.onclick = () => {
+		 	pi += 30
+		 	shar.style.top=pi+'px'
+		 }
+		  let_1.onclick = () => {
+		 	pi -= 30
+		 	px -= 30
+		 	shar.style.top=pi+'px'
+		 	shar.style.left=px+'px'
+		 }
+		 let_11.onclick = () => {
+		 	pi += 30
+		 	px -= 30
+		 	shar.style.top=pi+'px'
+		 	shar.style.left=px+'px'
+		 }
+		 let_2.onclick = () => {
+		 	pi += 30
+		 	px += 30
+		 	shar.style.top=pi+'px'
+		 	shar.style.left=px+'px'
+		 }
+		 let_3.onclick = () => {
+		 	pi -= 30
+		 	px += 30
+		 	shar.style.top=pi+'px'
+		 	shar.style.left=px+'px'
+		 }
+	</script>
+</body>
+</html>

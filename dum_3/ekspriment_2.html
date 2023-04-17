@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Noto+Color+Emoji&family=Noto+Sans+Miao&family=Redacted+Script:wght@300&family=Zeyada&display=swap" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		.h{
+			margin-top: 17pc;
+		}
+		.text{
+			color: white;
+			font-size: 70px;
+			text-align: center;
+			margin-top: 5pc;
+			font-family: 'Bebas Neue', cursive;
+		}
+		.box{
+			width: 33pc;
+			height: 150px;
+			position:relative;
+			left: 50%;
+			transform: translate(-50%);
+			background-color: black;
+			animation: pop 3s linear;
+		}
+		@keyframes pop{      
+			0%{
+				top: 10pc;
+			}
+			100%{
+				top: 20pc;
+			}
+		}
+		.box_1{
+			width: 80%;
+			height: 100pc;
+			border: 1px solid white;
+			position: relative;
+			left: 50%;
+			top: 2pc;
+			transform: translate(-50%);
+			border-radius: 10px;
+			background-image: url(https://i.ytimg.com/vi/wXtJur5vIgA/maxresdefault.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	marquee{
+		color: white;
+		font-size: 80px;
+		box-shadow: 0 0 2px white;
+		border-radius: 10px;
+		position: relative;
+		top: 1pc;
+	}
+	.box_2{
+		width: 250px;
+		height: 350px;
+		border: 1px solid white;
+		border-radius: 10px;
+		position: relative;
+		left: 15%;
+		top: 5%;
+		transition: 1s;
+	}
+	.box_2:hover {
+		transform: scale(1.1);
+	}
+	.box_3{
+		left: 60%;
+		top: -13%;
+	}
+	.mr{
+		position: relative;
+		top: -8%;
+		box-shadow: 0 0 0 white;
+		border-radius: 0;
+	}
+	.kr{
+		width: 62.3pc;
+		height:919px;
+		position: relative;
+		top: -7.5%;
+		border-radius: 0 0 10px 10px;
+		background-image: url(https://cdn1.ozone.ru/s3/multimedia-4/6265353196.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	</style>
+</head>
+<body>	
+	<div class="box"></div>
+		<p class="text">dishes for the soul . . .</p>
+		<hr class="h">
+	<marquee>FOOD</marquee>
+		<div class="box_1">
+			<div class="box_2"></div>
+			<div class="box_3 box_2"></div>
+			<marquee class="mr">DRINKS</marquee>
+			<div class="kr"></div>
+			<div></div>
+			<div></div>
+		</div>
+</body>
+</html>

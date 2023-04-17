@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+	<style type="text/css">
+		.box{
+			width: 355px;
+			height: 570px;
+			border: 7px solid;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 20px;
+		}
+		.box_1{
+			position: relative;
+			left: -4px;
+			width: 355px;
+			height: 35px;
+			border: 4px solid;
+			background-color:rgba(20, 26, 25, 0.2);
+			top: -62.5pc;
+			border-top-right-radius: 15px;
+			border-top-left-radius:15px;
+		}
+		.box_1_1{
+			width: 9px;
+			height: 9px;
+			border: 1px solid;
+			border-radius: 50%;
+			background-color: red;
+			position: relative;
+			left: 1.5pc;
+			top: 0.4pc;
+		}
+		.box_1_2{
+			width: 15px;
+			height: 15px;
+			border: 1px solid;
+			border-radius: 50%;
+			position: relative;
+			left: 2.5pc;
+			top: -0.2pc;
+			background-color: white;
+		}
+		.box_1_3{
+			position: relative;
+			left: 4.5pc;
+			top: -1pc;
+			background-color: white;
+		}
+		.box_1_4{
+			position: relative;
+			left: 5.6pc;
+			top: -1.7pc;
+			background-color: white;
+		}
+		.box_1_5{
+			width: 50px;
+			height: 5px;
+			border: 2px solid;
+			border-radius: 10px;
+			margin-right: auto;
+			margin-left: auto;
+			background-color: white;
+			margin-top: -2.3pc;
+		}
+		.box_1_6{
+			position: relative;
+			left: 15.5pc;
+			top: -0.8pc;
+			background-color: white;
+		}
+		.box_1_7{
+			position: relative;
+			left: 18.5pc;
+			top: -1.6pc;
+			background-color: white;
+		}
+		.box_2{
+			position: relative;
+			left: -4px;
+			top: -31.8pc;
+			width: 355px;
+			height: 35px;
+			border: 4px solid;
+			border-bottom-right-radius: 15px;
+			border-bottom-left-radius:15px;
+			background-color:rgba(20, 26, 25, 0.2);
+		}
+		.box_2_1{
+			width: 174px;
+			height: 496px;
+			border: 1px solid rgba(0, 0, 0, 0.0);
+			display: ;
+			position: relative;
+			top: 2.3pc;
+			z-index: 5;
+		}
+		.box_2_2{
+			position: relative;
+			left: 11.5pc;
+			top: -28.8pc;
+		}
+		.box_3{
+			width: 80px;
+			border-radius: 10px;
+			position: relative;
+			top: 1pc;
+			left: 3pc;
+			z-index: 4;
+			background-color: black;
+
+		}
+		.img{
+			position: absolute;
+			top: 3.3pc;
+			width: 355px;
+			height: 495px;
+			background-image: url(http://img10.joyreactor.cc/pics/post/full/holeecrab-Makise-Kurisu-Steins-Gate-Anime-6934908.jpeg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.i{
+			position: absolute;
+			top: -0.1pc;
+		}
+	</style>	
+<body>
+	<div class="box">
+		<div id="im" class="img"></div>
+		<div id="audi" class="box_2_1">
+			<div id="re" class="box_3"></div>
+		</div>
+		<div id="au" class="box_2_2 box_2_1">
+			<div id="ri" class="box_4 box_3"></div>
+		</div>
+		<div class="box_1">
+			<div class="box_1_1"></div>
+			<div class="box_1_2"></div>
+			<div class="box_1_3 box_1_1"></div>
+			<div class="box_1_4 box_1_1"></div>
+			<div class="box_1_5"></div>
+			<div class="box_1_6 box_1_2"></div>
+			<div class="box_1_7 box_1_1"></div>
+		</div>
+		<div class="box_2"></div>
+	</div>
+	<script type="text/javascript">
+		const audi = document.getElementById('audi')
+		const im = document.getElementById('im')
+		audi.onclick = () => {
+			im.innerHTML='<img class="i img" src="https://krot.info/uploads/posts/2021-03/1614707686_11-p-devushka-sidit-na-mashine-art-kartinki-17.png"/>'
+			ri.style="border: 3px solid rgba(95, 98, 97, 1.5)"
+		}
+		au.onclick = () => {
+			im.innerHTML='<img class="i img" src="https://pbs.twimg.com/media/FElTf5TXEAUqxqW.jpg"/>'
+			re.style="border: 3px solid rgba(95, 98, 97, 1.5);"
+		}
+		console.dir(im.style)
+	</script>
+</body>
+</html>
